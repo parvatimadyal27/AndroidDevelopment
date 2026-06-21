@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title1">Welcome to your journey</string>
+    <string name="title2"> "Explore Nature"</string>
+    <string name="title3">"Capture Moments"</string>
+    <string name="title4">"Find Inspiration",</string>
+    <string name="description1">Experience the beauty of nature through our minimalist lens. Let\'s get you set up in just a few steps.</string>
+    <string name="description2">Discover amazing places around you.</string>
+    <string name="description3">Save your favourite memories.</string>
+    <string name="description4">Stay motivated every day.</string>
+    <string name="next_btn">Next</string>
+    <string name="previous_btn">Previous</string>
+    <string name="subtitle">Please enter your details to continue</string>
+    <string name="username_label">Username</string>
+    <string name="username"> Enter Username</string>
+    <string name="password_label">Password</string>
+    <string name="password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="forgot">Forgot password?</string>
+
+</resources>

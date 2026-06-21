@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    >
+
+<!--logo-->
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/ic_launcher_foreground"
+    android:background="@color/button"
+    android:layout_marginTop="50dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--title-->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair_display_bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+<!-- subtitle-->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle"
+        android:textColor="#ADABAA"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+<!--    username label-->
+<TextView
+    android:id="@+id/userLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/username_label"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/subtitle"
+
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="60dp"/>
+
+<!--username input-->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:hint="@string/username"
+        android:background="#F3F4F8"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="16dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/userLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+<!--Password label-->
+    <TextView
+        android:id="@+id/password_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintBottom_toTopOf="@id/password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+<!--Password input-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#F3F4F8"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/password_Label"
+        />
+
+
+<!--submit button-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/submit"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/button"
+        app:cornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        />
+
+<!--    forgot password-->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot"
+        android:textColor="#ADABAA"
+        app:layout_constraintTop_toBottomOf="@+id/submit"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
